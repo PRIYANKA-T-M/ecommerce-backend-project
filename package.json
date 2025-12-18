@@ -9,12 +9,12 @@
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
     "express-rate-limit": "^8.2.1",
+    "helmet": "^8.1.0",
     "json-web-token": "^3.2.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.0.1",
     "nodemailer": "^7.0.11"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -29,5 +29,6 @@
   "bugs": {
     "url": "https://github.com/PRIYANKA-T-M/ecommerce-backend-project/issues"
   },
-  "homepage": "https://github.com/PRIYANKA-T-M/ecommerce-backend-project#readme"
+  "homepage": "https://github.com/PRIYANKA-T-M/ecommerce-backend-project#readme",
+  "devDependencies": {}
 }
