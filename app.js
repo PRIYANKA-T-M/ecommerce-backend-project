@@ -42,6 +42,8 @@ let productSchema = new mongoose.Schema({
 //step 4: create a model
 const finalproducts=mongoose.model('products',productSchema)
 // Apply the rate limiting middleware to all requests.
+app.set('trust proxy', 1);
+
 app.use(limiter)
 //connecting the frontend with backend
 app.use(cors())
