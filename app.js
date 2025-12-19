@@ -156,30 +156,30 @@ app.post('/signup',async(req,res)=>{
     })
 //api-2 fetch all the products
 
-// app.get('/fetch',async (req,res)=>{
-//     try{
-//         let userdata = await finalproducts.find()
-//         res.json({userdata})
+app.get('/fetch',async (req,res)=>{
+    try{
+        let userdata = await finalproducts.find()
+        res.json({userdata})
 
-//     }
-//     catch(error){
-//         res.json({
-//             msg:error.message
-//         })
-//     }
-    
-// })
-
-app.get('/products', async (req, res) => {
-    try {
-        let products = await finalproducts.find()
-        res.json({ products })
-    } catch (error) {
+    }
+    catch(error){
         res.json({
-            msg: error.message
+            msg:error.message
         })
     }
+    
 })
+
+// app.get('/products', async (req, res) => {
+//     try {
+//         let products = await finalproducts.find()
+//         res.json({ products })
+//     } catch (error) {
+//         res.json({
+//             msg: error.message
+//         })
+//     }
+// })
 
 //api-3 delete a product
 app.delete('/deleteproducts',async (req,res)=>{
